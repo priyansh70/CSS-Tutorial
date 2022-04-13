@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text in CSS</title>
+
+    <style>
+        #demo
+        {
+            border: 2px dotted red;
+            background-color: blanchedalmond;
+            text-align: center; /*text align in center*/
+            text-align: justify; /*justify all words in line*/
+            text-decoration: underline; /*underline in words*/
+            text-transform: lowercase; /*all character in lowercase*/
+            text-transform: uppercase; /*all character in uppercase*/
+            text-transform: capitalize; /*all words first character is captial*/
+            line-height: 25px; /*it provides a height of line and spaces between 
+            lines*/
+            text-indent: 20px; /*first Word start after 20px*/
+            letter-spacing: 2px; /*space between all letter 2px*/
+            word-spacing: 5px; /*space between all letter 5px*/
+            word-wrap: break-word; /*if container full and any one word is more lengthly then this word breaked into 2 parts*/
+            
+            /*white-space: pre; /*it behave like pre tag
+            white-space: nowrap; /*print all words in on line*/
+        }
+        .name
+        {
+            font-size: 30px;
+            text-shadow: 2px 7px 5px blue; /*horizontal vertical blur*/
+        }
+        .vertical
+        {
+            font-style: italic;
+            font-size: 40px;
+            width: 800px;
+            border: 2px solid black;
+            writing-mode: vertical-rl;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="demo">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, quo voluptatum fugit dolore tempore cum
+            nostrum exercitationem cumque laudantium nulla! Aperiam, quae! Eum quod ex voluptate et, quaerat quasi
+            doloremque nesciunt enim facilis consectetur nostrum quibusdam iure optio nam, earum saepe ad? Sapiente
+            adipisci autem quo vitae ipsa! Recusandae corporis assumenda deleniti! Iure quo, temporibus quae sapiente
+            labore obcaecati deserunt, saepe cum quis commodi illum officia minus totam dolore quod voluptas amet
+            tempore possimus odit, dolorem repudiandae? Provident error perferendis quasi quia fugiat laudantium, odit
+            tenetur? Quia, molestias doloremque perferendis quas repudiandae quos officiis natus exercitationem,
+            assumenda praesentium fuga repellendus.
+        </p>
+    </div>
+    <p class="name">
+        My Name is Priyansh Patel
+    </p>
+    how can we write Vertically see below 
+    <div class="vertical">
+        <p>Hello Peter</p>
+    </div>
+</body>
+
+</html>

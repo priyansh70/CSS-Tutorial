@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin in CSS</title>
+
+    <style>
+        body
+        {
+            border: 5px dotted rgb(196, 0, 0);
+        }
+        .margin {
+            border: 2px solid tomato;
+            padding: 25px;
+            background-color: yellow;
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 10px 10px 0px 10px;
+        }
+        .example
+        {
+            border: 2px solid rgb(102, 7, 211);
+            font-size: 15px;
+            padding: 20px;
+            background-color: wheat;
+            margin-top: 20px; /*20pixels margin from top*/
+            margin-right: 15px; /*15pixels margin from right*/
+            margin-bottom: 30px; /*30pixels margin from bottom*/
+            margin-left: 10%; /*10% pixels margin from left*/
+
+            margin: 30px; /*30pixels padding from each direction*/
+        }
+        .example1
+        {
+            border: 2px solid red;
+            font-size: 15px;
+            width: 250px;
+            margin: 20px auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="margin">
+
+        gapping between 1 element border and outside element border
+        <br>        <br>
+        The CSS margin properties are used to create space around elements, outside of any defined borders.
+        <br>        <br>
+        With CSS, you have full control over the margins. There are properties for setting the margin for each side of
+        an element (top, right, bottom, and left).
+        <br>        <br>  
+        if you give 20px bottom margin one element and another element have 40px top Margin then total margin between 2 elements (40>20)=40px not (40+20)=60px
+        Example Below :-
+    </div>
+
+    <div class="example">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur a perspiciatis saepe magni, aliquid velit
+        voluptatem veritatis in ipsa quod repudiandae eos aspernatur sint doloremque adipisci consequuntur libero
+        asperiores quam nulla deleniti necessitatibus! Possimus maxime nulla veniam minus culpa ipsa voluptate, impedit
+        sapiente tenetur quam cumque officiis quod esse amet illum? Amet rem magni dolorem eveniet quas officiis
+        recusandae a facere sapiente doloremque laudantium minima illo molestiae, laborum nisi placeat? Eum magnam
+        accusamus et culpa dolorum vel illum itaque quisquam doloribus, consectetur porro iusto incidunt dolore alias
+        nisi. Est sunt quisquam, odio tempore itaque aperiam? Doloribus ab vero quaerat. Sequi!
+    </div>
+    <div class="example1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quod sit consequuntur doloremque
+        necessitatibus, voluptates eos dignissimos harum minus, atque tempore, veritatis quibusdam? Minus, recusandae
+        doloremque iure unde nulla perferendis commodi voluptates adipisci dignissimos, quisquam obcaecati cum veritatis
+        necessitatibus quis quia, distinctio iste? Culpa maxime, veritatis aliquam 
+    </div>
+    <div class="example">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates pariatur corporis culpa dolores facere unde
+        aspernatur, a numquam iste vero voluptatem tenetur. Maxime veniam, expedita, quas, velit cumque officiis animi
+        quis enim nostrum saepe corrupti magnam. Expedita similique odit quod esse necessitatibus sit mollitia quisquam
+        doloremque repellat est vitae ullam distinctio pariatur repudiandae fuga culpa rem tenetur assumenda aperiam
+        eligendi, iusto consequatur, odio excepturi. Consequuntur est accusamus reprehenderit suscipit totam. Rem
+        delectus cupiditate laboriosam consequuntur ab sequi, facere officiis sapiente, fugit in iusto voluptas maiores
+        placeat culpa dolorem fugiat consectetur! Quo sed aliquam perspiciatis culpa corporis, vel facere fugiat ipsa!
+    </div>
+</body>
+
+</html>

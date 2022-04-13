@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <style>
+        p {
+            color: blue;
+            background-color: wheat;
+            border: 2px solid aqua;
+        }
+
+        #para {
+            color: red;
+            background-color: palegoldenrod;
+            border: 2px solid aqua;
+        }
+
+        .para {
+            color: yellow;
+            background-color: black;
+            border: 2px solid aqua;
+        }
+
+        ul{
+            font-size: 25 px;
+            background-color: black;
+            font-style: oblique; 
+            color: yellow;
+            border-radius: 2px ;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>There are Manily 3 types of Selector in CSS</h1>
+    <ul>
+        <li>Element Selectors
+            <pre>
+                Example :- 
+                p {
+                    color : blue;
+                }
+            </pre>
+        </li>
+
+        <li>
+            Id Selector
+            <pre>
+                Example : - 
+                //it is used for style particular Element
+                #para 
+                {
+                    color : red;
+                }
+            </pre>
+        </li>
+        <li>
+            Class Selector
+            <pre>
+                //it is used to style  group of elements
+                .para 
+                {
+                    color: yellow;
+                }
+            </pre>
+        </li>
+        <li>
+            Priority of Selector if we use all three selectors in one element then 
+            priority sequence - >
+            <ol>
+                <li>ID Selector</li>
+                <li>Class Selector</li>
+                <li>Element Selector</li>
+            </ol>
+        </li>
+    </ul>
+
+    <p>Paragraph designed by Element Selector</p>
+    <p id="para">Paragraph designed by ID Selector</p>
+    <p class="para">Paragraphs desgined by Class Selectors</p>
+    <p class="para">Paragraphs desgined by Class Selectors</p>
+    <p class="para">Paragraphs desgined by Class Selectors</p>
+</body>
+
+</html>

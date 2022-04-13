@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width</title>
+
+    <style>
+        body{
+            border: 2px solid navajowhite;
+            height: 1000px;
+        }
+        #demo {
+            background-color: rgb(100, 150, 250);
+            /* height: 500px; */
+            height: 100px;
+            width: 700px;
+            /* width: 100px; */
+            max-width: 500px;
+            min-width: 300px;
+            min-height: 40%; /*40% of  body */
+            max-height: 1000px;
+        }
+
+        ul {
+            font-size: 25 px;
+            background-color: black;
+            font-style: oblique;
+            color: yellow;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maxime vitae quis debitis neque,
+        reiciendis nihil ullam exercitationem ex voluptatibus unde, laborum, iusto quidem laudantium totam dicta modi
+        fugiat optio! Necessitatibus suscipit, error inventore, cupiditate iste voluptatum facere consequatur nulla
+        voluptatem reprehenderit in, laudantium obcaecati! Doloremque sint illum commodi voluptates quas quisquam eum
+        nihil! Et quod est culpa doloribus non blanditiis sed voluptate voluptatibus cupiditate molestiae, facere
+        repudiandae in consectetur pariatur eveniet saepe numquam dolorum provident quasi illum reprehenderit? Odit a
+        eligendi, expedita eaque quidem beatae eius corrupti ipsum aperiam iure, eveniet natus modi nostrum consequatur
+        error explicabo veniam? Omnis.
+    </div>
+    <ul>
+        <li>Min-Height
+            <pre>
+                The min-height property defines the minimum height of an element.
+                If the content is smaller than the minimum height, the minimum height will be applied.
+                If the content is larger than the minimum height, the min-height property has no effect.
+            </pre>
+        </li>
+
+        <li>
+            Max-Height
+            <pre>
+                The max-height property defines the maximum height of an element.
+                If the content is larger than the maximum height, it will overflow. 
+                How the container will handle the overflowing content is defined by the overflow property.
+                If the content is smaller than the maximum height, the max-height property has no effect.
+            </pre>
+        </li>
+        <li>
+            Min-Width 
+            <pre>
+                The min-width property defines the minimum width of an element.
+                If the content is smaller than the minimum width, the minimum width will be applied.                
+                If the content is larger than the minimum width, the min-width property has no effect.
+            </pre>
+        </li>
+        <li>
+            Max-Width
+            <pre>
+                The max-width property defines the maximum width of an element.
+                If the content is larger than the maximum width, it will automatically change the height of the element.
+                If the content is smaller than the maximum width, the max-width property has no effect.
+            </pre>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border in CSS</title>
+
+    <style>
+        .border
+        {
+            background-color: wheat;
+            border-style: dashed; /* dashed style in border */
+            border-style: solid; /* solid style in border */
+            border-style: dotted; /* dotted style in border */
+            border-style: double; /* double style in border */
+            border-style: none; /*none there no border it is by by default*/
+            border-style: groove; /*grrove style in border*/
+            border-style: ridge; /*ridge style in border*/
+
+            /* we can also set different style of border in each direction */
+            /* 4 value syntax :- border-style : top right down left */
+            /* 2 value syntax :- border-style : (top-bottom) (right-left) */
+            /* Example  */
+            border-style: solid ridge dotted dashed;
+
+            /* Mostly used in border style Solid */
+
+            border-width: 2px;
+
+            border-color: red;
+
+            /* Shortcut for use these 3 properties of border  */
+            border: 2px solid red;
+
+            /* we can edit particular direction border  */
+            border-top: 3px solid blue;
+
+            /* Border RAdius use for curv border */
+            border-radius: 50%; /* 50% use for make circle*/
+            border-radius: 2px 5px 10px 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Borders in CSSs</h1>
+    <h1>All important notes in CSS Comment for see press ctrl+u</h1>
+    <div class="border">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus aliquid repellendus esse vel nihil. Commodi
+            sit, officia illum eligendi autem nesciunt? Ipsum, voluptatum fugit. Doloremque amet iusto blanditiis in,
+            eveniet, harum consequatur asperiores ad necessitatibus iure aut magni? Nihil dignissimos reiciendis libero
+            minima. Fuga maxime obcaecati, distinctio magnam natus sequi quae dicta. Dignissimos dicta facilis officia
+            distinctio, velit maiores quis alias eligendi fuga delectus mollitia adipisci autem, praesentium iusto
+            temporibus voluptas cupiditate vel suscipit minima doloribus ratione necessitatibus porro! Enim voluptas
+            consequuntur assumenda sit et cum quo fugiat maiores itaque tenetur consequatur voluptates autem, officiis
+            velit, iure illo eveniet! Tenetur?</p>
+    </div>
+</body>
+
+</html>

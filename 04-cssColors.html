@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors </title>
+
+    <style>
+        ul {
+            font-size: 25 px;
+            background-color: black;
+            font-style: oblique;
+            color: yellow;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        #name{
+            color : firebrick;
+            font-size : larger;
+        }
+
+        #rgb
+        {
+            color: rgb(100, 90, 255);
+        }
+
+        #rgba{
+            color: rgb(10, 115, 234,0.9);
+        }
+
+        #hex
+        {
+            color: #FF03AA;
+        }
+
+        #hsl
+        {
+            color: hsl(103, 58%, 27%);
+        }
+
+        #hsla
+        {
+            color: hsla(300, 90%, 20%, 0.877);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Colors in CSS</h1>
+    <h2>In CSS Colors can be specified using -> </h2>
+    <ul>
+        <li>Predefined Color name <br> <br>
+            Modern Browser Support 140 Named Colors <br><br>
+        </li>
+        <li>RGB(Red-Green-Blue)
+            <pre>
+                <ul>
+                    <li>rgb(red,green,blue)</li>
+                    <li>Color value between 0 and 255</li>
+                    <li>Black : rgb(0,0,0)</li>
+                    <li>White : rgb(255,255,255)</li>
+                    <li>Red : rgb(255,0,0)</li>
+                    <li>Green : rgb(0,255,0)</li>
+                    <li>Blue : rgb(0,0,255)</li>
+                </ul>
+            </pre>
+        </li>
+        <li>RGBA(Red-Green-Blue-Alpha)
+            <pre>
+                <ul>
+                    <li>rgba(red,green,blue,alpha)</li>
+                    <li>alpha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all)
+                    </li>
+                    <li>Example :- <b>rgba(255,99,71,0.5)</b></li>
+                </ul>
+            </pre>
+        </li>
+        <li>HEX(ex- #FF03AA)
+            <pre>
+                <ul>
+                    <li>#rrggbb</li>
+                    <li>hexademinal values between 00 and ff (same as decimal 0-255)</li>
+                    <li>Red -> #ff0000</li>
+                    <li>Black -> #000000</li>
+                    <li>White -> #ffffff</li>
+                </ul>
+            </pre>
+        </li>
+        <li>HSL(Hue-Saturation-Lightness)
+            <pre>
+                <ul>
+                    <li>hsl(hue,saturation,lightness)</li>
+                    <li>Hue is a degree on the color wheel from 0 to 360</li>
+                    <li>0 is red</li>
+                    <li>120 is green </li>
+                    <li>240 is blue </li>
+                    <li>Saturation is a percentage value,0% means a shade of gray, and 100% is the full color</li>
+                    <li>Lightness is also a percentag,0% is black , 50% is neither light or dark, 100% is white</li>
+                    <li>RED : hsl(0,100%,50%)</li>
+                </ul>
+            </pre>
+        </li>
+        <li>HSLA(Hue-Saturation-Lightness-Alpha)
+            <pre>
+                <ul>
+                    <li>hsla(hue,saturation,lightness,alpha)</li>
+                    <li>alpha parameter is a number between 0.0(fully transparent) and 1.0(not transparent at all)</li>
+                    <li>hsla(0,100%,50%,0.5)</li>
+                </ul>
+            </pre>
+        </li>
+    </ul>
+
+    <p id="name">Color by Predefined Name</p>
+    <p id="rgb">Color by RGB</p>
+    <p id="rgba">Color by RGBA</p>
+    <p id="hex">Color HEX</p>
+    <p id="hsl">Color by HSL</p>
+    <p id="hsla">Color by HSLA</p>
+</body>
+
+</html>
