@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+
+    <style>
+        textarea
+        {
+            resize: none;
+        }
+
+        #box
+        {
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            overflow: auto;
+            resize: both; /*horizontal and vertical */
+            resize: horizontal; /*only Horizontal*/
+            resize: vertical; /*only vertical*/
+        }
+        div
+        {
+            height: 600px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- we can define text area size -->
+    <textarea name="" id="" cols="50" rows="20"></textarea>
+    
+    <h1>Resize Property in CSS</h1>
+    <p>Resize Property ke liye 2 condition neccessary hai</p>
+    <ol>
+        <li>
+            Element Block Hona Chahiye ex:- div , h1 , p etc
+        </li>
+        <li>
+            Element ki Overflow codintion - scroll ya hidden ya auto
+        </li>
+    </ol>
+    <div id="box"></div>
+    <div></div>
+</body>
+</html>

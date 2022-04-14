@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <style>
+        html{
+            font-size: 10px;
+        }
+        #parent
+        {
+            border: 2px solid red;
+            width: 10cm; /*10cm = 3.93701 inches*/
+            width: 200mm; /*200mm = 7.87402 inches*/
+            width: 5in; /*5inch = 480 pixel (X)*/
+            width: 500px; /*500px = 5+inch*/
+            width: 500pt; /*500pt = appr 7inch*/
+            width: 50pc; /*50pc = 600pt = 8inch+*/
+            width: 500px; /*500px = 5+inch*/
+
+            height: 50vh; /*50% hieght of view port (white space)*/
+            width: 60vw; /*50% width of view port*/
+
+            font-size: 2rem; /*html 10 * 2 = 20px*/
+        }
+
+        #child
+        {
+            border: 2px solid blue;
+            font-size: 2em; /*parent 20px * 2 = 40px*/
+            font-size: 3rem; /*10html * 3 = 30px*/
+
+            /* according to size of browser for fonts  */
+            /* font-size: 5vw; */
+        }
+        #cssUnit
+        {
+            font-size: 2em;
+            border: 2px solid rgb(165, 4, 165);
+            padding: 7px 10px;
+            margin: 10px auto;
+            background-color: rgb(233, 187, 187);
+            font-style: italic;
+            font-weight: bold;
+            font-family: 'cursive';
+            text-transform: capitalize;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Different type of Units in CSS</h1>
+    <div id="cssUnit">
+        <p>We use length in width,height,margin,padding , font-size</p>
+        <p>There are two types of units in CSS</p>
+        <!-- <!-- <ol> -->
+            <li>Absolute
+                <p>There are 6 types of Absolute Unit in CSS
+                    <ul>
+                        <li>Cm</li>
+                        <li>Mm</li>
+                        <li>In(Inch)</li>
+                        <li> <strong>Px(1Inch = 96px)</strong></li>
+                        <li>Pt(1Inch = 72t)</li>
+                        <li>Pc(1pc = 12pt)</li>
+                    </ul>
+                </p>
+            </li>
+            <li>Relative
+                <p>There are 5 types of Relative Unit in CSS
+                    <ul>
+                        <li>Em
+                            <pre>Em is relative to the size of its direct parent</pre>
+                        </li>
+                        <li>Rem
+                            <pre>Rem is only realtive to root(html tag)size</pre>
+                        </li>
+                        <li>Vh
+                            <pre>Vh is 1% of view port height</pre>
+                        </li>
+                        <li>Vw
+                            <pre>Vw is 1% of view port width</pre>
+                        </li>
+                        <li>%
+                            <pre>% is relative to parent</pre>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+        </ol> 
+        <h4>Example Below</h4>
+    </div>
+
+    <div id="parent">
+        <p>This is Parent Text</p>
+        <div id="child">
+            <p>This is Child Text</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List in CSS</title>
+
+    <style>
+        ul
+        {
+            list-style-type: lower-alpha; /*lower alphabates */
+            /*Many More Style*/
+
+            /* We can set any image in list style */
+            /* list-style-image: url(images/sprite.jpg) ; */
+
+            list-style-position: outside; /*our style outside of border*/
+            list-style-position: inside; /*our style inside of border*/
+        }
+        ol
+        {
+            list-style-type: disc;
+            list-style-type: square; /*Square style*/
+            /*Many More Style*/
+            
+            list-style-position: inside; /*our style inside of border*/
+        }
+        li
+        {
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Unordered List</h1>
+    <ul>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+    </ul>
+    <hr>
+    <h1>Ordered List</h1>
+    <ol>
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font in CSS</title>
+
+    <!-- use google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Ms+Madi&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face
+        {
+            font-family: abc; /*we can give any name*/
+            src: url('Fonts/AlexBrush-Regular.ttf');
+        }
+        /* 1 pixels = 6.25%  */
+        h1 {
+            font-size: 30px;
+            /*size can be in % , em,rem etc */
+            font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        p {
+            font-size: 187%;
+            /* font-family: 'Ms Madi', cursive;  */
+            font-family: 'Dancing Script', cursive;
+            font-weight: bold;
+            /*It is used to bold */
+            /* font-weight: normal; */
+            font-style: italic;
+            /*italic*/
+            /*font-variant: small-caps;*/
+            /*all character in captial letter in small*/
+
+            /* shortcut for font  */
+            font: italic small-caps 700 25px 'dancing script';
+        }
+        #fontEx 
+        {
+            font-family: abc,sans-serif;
+            font-weight: 500;
+            font-size: 45px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Fonts in CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quidem doloremque iusto accusantium ducimus, enim
+        hic beatae voluptates sequi. Recusandae rem velit consequatur incidunt, ipsam quod ratione perferendis
+        architecto mollitia aut ad vel reprehenderit debitis nihil eum rerum placeat hic harum facilis deserunt, ipsum
+        impedit possimus. Labore aliquam officiis vel?</p>
+    <p id="fontEx">we can download font and use it </p>
+</body>
+
+</html>

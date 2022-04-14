@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filter</title>
+
+    <style>
+        div{
+            margin-bottom: 50px;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        }
+        img
+        {
+            /* filter: blur(2px);  */
+            /* filter: brightness(90%); */
+            /* filter: contrast(80%); */
+            /* filter: drop-shadow(80%); */
+            /* filter: grayscale(60%); */
+            /* filter: hue-rotate(50); */
+            /* filter: invert(96); */
+            /* filter: opacity(90); */
+            filter: blur(5px) brightness(90%);
+        }
+        #functions
+        {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        The filter CSS property applies graphical effects like blur or color shift to an element. 
+        <br>
+        Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+        <br>
+        <p id="functions">filter: none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();</p>
+    </div>
+    <img src="images/image1.jfif" alt="">
+</body>
+</html>

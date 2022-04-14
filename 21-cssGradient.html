@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient</title>
+
+    <style>
+        #div1
+        {
+            border: 2px solid black;
+            height: 80vh;
+            width: 70vw;
+            margin: 10px auto;
+            background-image: linear-gradient(red,yellow); /*Top to Botom*/
+            background-image: linear-gradient(to right ,red,yellow,blue); /*Left to Right*/
+            background-image: linear-gradient(to bottom right ,red,yellow,blue); /*left to bottom right*/
+            background-image: linear-gradient(150deg ,red 20%,yellow 30%,blue 50%); /*20% red,30%yellow,50% blue*/
+            background-image: linear-gradient(150deg ,red,yellow,blue); /*Rotate at 150 degree*/
+        }
+        #div2
+        {
+            border: 2px solid black;
+            height: 80vh;
+            width: 70vw;
+            margin: 10px auto;
+            background-image: radial-gradient(blue,red);
+            background-image: radial-gradient(blue,red,yellow);
+            background-image: radial-gradient(150deg, blue,red,yellow);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+</body>
+</html>

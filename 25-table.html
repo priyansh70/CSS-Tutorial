@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table {
+            border: 2px solid goldenrod;
+            border-collapse: collapse; /*it is used for collabe all borders in one*/
+            border-collapse: separate;
+            border-spacing: 15px; /*space from each direction is 15pixels*/
+            border-spacing: 15px 20px; /*space from Top-Bottom direction 15px and Left-Right direction is 20pixels*/
+            empty-cells: hide;
+            /* width: 350px;*/
+            table-layout: fixed; /*divide cells into equal parts*/
+            table-layout: auto; /*divide cells sized according to content*/
+        }
+
+        caption {
+            border: 2px solid green;
+            caption-side: bottom;
+        }
+
+        /* we can not set border in tr  */
+
+        tr {
+            border: 1px solid black;
+        }
+
+        th {
+            border: 2px solid tomato;
+            margin: 10px;
+            padding: 5px;
+            height: 20px;
+            /* background-color: black; */
+            /* color: yellow; */
+            text-align: center;
+            /* font-family: cursive; */
+            text-decoration: 0;
+            font-weight: 0;
+        }
+
+        td {
+            border: 2px solid aquamarine;
+            margin: 10px;
+            padding: 5px;
+            text-align: center;
+            /* vertical-align: bottom;  */
+            /* vertical-align: top; */
+            vertical-align: middle;
+            height: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Designing of Table</h1>
+    <table>
+        <caption>Table</caption>
+        <thead>
+            <tr>
+                <th>Column1</th>
+                <th>Column2</th>
+                <th>Column3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data1</td>
+                <td>Data2</td>
+                <td>Data3</td>
+            </tr>
+            <tr>
+                <td>Data4</td>
+                <td>Data5</td>
+                <td>Data6</td>
+            </tr>
+            <tr>
+                <td>Data7</td>
+                <td>Data8</td>
+                <td></td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
