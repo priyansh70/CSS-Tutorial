@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elments</title>
+
+    <style>
+        p
+        {
+            color: purple;
+        }
+
+        /*It is used to style first letter of any latter*/
+        p::first-letter{
+            color: red;
+            font-size: 30px;
+        }
+
+        /*It is used to style first line of element*/
+        p::first-line{
+            color: blue;
+            font-size: 30px;
+        }
+        
+        /* when we select elements for any purpose at this time if we want to changes then we style ::selection */
+        p::selection
+        {
+            background-color: green;
+            color: aliceblue;
+        }
+        /*We use before to add any content or image before any element*/
+        h4::before
+        {
+            content: "Before dummy ";
+            font-size: 20px;
+            color: blue;
+        }
+        
+        /*We use after to add any content or image After any element*/
+        h4::after{
+            content: " After Dummy";;
+            font-size: 20px;
+            color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>A CSS pseudo-element is used to style specified parts of an element.</h1>
+    <h1>
+        For example, it can be used to:
+        </h1>
+    <ul>
+        <li>
+            Style the first letter, or line, of an element
+            </li>
+            <li>Insert content before, or after, the content of an element</li>
+    </ul>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium sit nulla neque sint officiis deserunt
+        officia perspiciatis ipsam impedit molestiae et rerum, asperiores explicabo labore eligendi voluptatum iste.
+        Ipsam totam corrupti impedit odio, ex quibusdam, nihil eius nostrum, quo suscipit deserunt aliquam. Et provident
+        assumenda pariatur necessitatibus, nisi consequatur, explicabo amet facere, voluptatem libero soluta! Reiciendis
+        quae aperiam harum quasi sint non nihil odio tempora cum, totam accusantium. Cumque laboriosam nam labore iure
+        quas blanditiis doloribus, repellendus officia dolore, laudantium optio adipisci cum molestias molestiae at.
+        Architecto debitis id ab inventore libero, repellat ullam ut possimus magnam fuga praesentium?
+    </p>
+
+    <h4>This is Dummy Heading</h4>
+</body>
+
+</html>

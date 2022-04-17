@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        body
+        {
+            height: 1000px;
+        }
+        #parent
+        {
+            border: 2px solid red;
+            padding: 20px;
+            width: 50%;
+            position: relative;
+        }
+        /* it is for fixed  */
+        #box1{
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center ;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            font-family: cursive;
+
+            position: fixed;
+            /* top: 10px; */
+            right: 10px;
+            bottom: 20px;
+        }
+
+        /* it is for absolute  */
+        #box2{
+            background-color: khaki;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center ;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            font-family: cursive;
+
+            /* Main Property For Absolute */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+
+        }
+
+        /* it is for relative  */
+        #box3{
+            background-color: hotpink;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            text-align: center ;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            font-family: cursive;
+
+            /*Main Relative Property*/
+            position: relative;
+            top: 10px;
+            left: 120px;
+        }
+        #Note
+        {
+            background-color: pink;
+            width: 40%;
+            height: 200px;
+            font-family: cursive;
+            font-size: 25px;
+            overflow: scroll;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Position is Very Important in CSS</h1>
+    <p>I we use Relative , Absolute and Fixed then we can use Top,Left,Bottom and Right</p>
+
+    <ol>
+        <li>Static
+            <p>It is Default </p>
+        </li>
+        <li>Relative
+            <p>Box Move According their Current Position but thier space contains </p>
+        </li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+    </ol>
+
+    <div id="parent">
+        <div id="box1">Fixed</div>
+        <div id="box2">Absolute</div>
+        <div id="box3">Relative</div>
+    </div>
+
+    <div id="Note"> 
+        <Strong>Relative :- </Strong> the element is positioned relative to its normal position <br> <br>
+        <strong>Absolute :- </strong> the element is positioned absolutely to its first positioned parent. <br> <br>
+        <strong>Fixed :- </strong> the element is positioned related to the browser window. <br> <br>
+        <strong>For More Details With Example :- </strong> <br>
+        <strong>W3Schhol</strong> <a href="https://www.w3schools.com/css/css_positioning.asp">Click</a> <br>
+        <strong>Simple Language</strong> <a href="https://dzone.com/articles/css-position-relative-vs-position-absolute#:~:text=Relative%20%2D%20the%20element%20is%20positioned,related%20to%20the%20browser%20window.">Click</a>
+    </div>
+</body>
+</html>

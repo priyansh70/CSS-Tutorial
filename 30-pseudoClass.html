@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+
+    <style>
+        ul{
+            background-color: aliceblue;
+            width: 400px;
+            height: 200px;
+            border: 2px solid red;
+        }
+
+        /*first Child is used for design first child of particular element*/
+        li:first-child{
+            color: brown;
+        }
+
+        /*last Child is used for design last child of particular element*/
+        li:first-child{
+            color: brown;
+        }
+
+        /*it is used for design any particular child*/
+        li:nth-child(3)
+        {
+            color: yellow;
+        }
+        /*We can us any pattern in nth child just below*/
+        li:nth-child(2n+2) 
+        {
+            color: aqua;
+        }
+
+        /* we can style element as a odd and even manner */
+
+        li:nth-child(odd)
+        {
+            border: 1px solid red;
+        }
+
+        li:nth-child(even)
+        {
+            border: 2px solid blue;            
+        }
+
+        /* we can start sequence from last also by using last  */
+        li:nth-last-child(2)
+        {
+            padding: 20px;
+            color: red;
+        }
+
+        /* Focus pseudo class */
+        input{
+            cursor: pointer;
+        }
+        input:focus{
+            border:3px solid red;
+        }
+        label{
+            cursor: pointer;
+        }
+        a:hover{
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Pseudo Class is a Special state of element </h1>
+    <p>Example a tag have 4 Special state Link,Hover,Active,Visite</p>
+
+    <p>there are some example of Pseudo Class </p>
+    <p>All Explation in Comment in CSS to see press ctrl+u</p>
+
+    <!-- <div id="para">
+        <p>First Paragraph</p>
+        <p>Second Paragraph</p>
+        <p>Third Paragraph</p>
+        <p>Fourth Paragraph</p>
+        <p>Fifth Paragraph</p>
+        <p>Sixth Paragraph</p>
+    </div> -->
+
+    <ul>
+        <li>This is first Element of List</li>
+        <li>This is second Element of List</li>
+        <li>This is Third Element of List </li>
+        <li>This is Fourth Element of List </li>
+        <li>This is Fifth Element of List </li>
+        <li>This is Sixth Element of List</li>
+    </ul>
+
+    <label for="name">Enter Your Name</label>
+    <input type="text" name="name" id="name">
+
+    <h2>For Learn More Pseudo Classes Then  Check This Site 
+         <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Click</a>
+    </h2>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        .display
+        {
+            border: 2px solid red; /*first property of start new line and takes full width*/
+            background-color: antiquewhite;
+            height: 100px; /*third Property of block */
+            width: 40%; 
+
+            /*Now I change it into Inline*/
+
+            display: inline; /*Inline property satiesfy*/
+            /*Not start from new Line*/
+            /*Don't take full width*/
+            /*dont take above height and width that mean third property also satiesfy*/
+
+
+            /*Now I change it into Inline-Block*/
+            display: inline-block;
+            /*Follow All Property*/
+        }
+
+        #Box
+        {
+            background-color: azure;
+            border: 2px solid black;
+            height: 200px;
+            width: 500px;
+            /* display: none; */ /*If we use none then element don't Show*/
+            visibility: hidden; /*Hide Element but space consume */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Display Property in CSS <br>
+    Display Property is Very Important in CSS</h1>
+    <p>There are Mainly 4 important Display Property 
+        <br>
+        Example of Block :- div , p , h1 , form etc <br>
+        Example of Inline :- span , img , a etc 
+    </p>
+    
+    <ol>
+        <li>Block
+            <ul>
+                <li>Starts with New Line</li>
+                <li>Full Width</li>
+                <li>Can Apply Height and Width</li>
+            </ul>
+        </li>
+        <li>Inline
+            <ul>
+                <li>Not Start From New Line</li>
+                <li>Neccessary Width takes</li>
+                <li>Can not Apply Height and Width</li>
+            </ul>
+        </li>
+        <li>Inline-Block
+            <ul>
+                <li>Not Start From New Line</li>
+                <li>Neccessary Width Takes </li>
+                <li>Can Apply Height and Width</li>
+            </ul>
+        </li>
+        <li>None</li>
+    </ol>
+
+    <div class="display">First Div</div>
+    <div class="display">Second Div</div>
+    
+    <div id="Box">This is Box</div>
+    Rest Codes
+
+
+<!-- 
+    NOTE :- 
+    Display:Block :- 
+    1 - Start From New Line 
+    2 - Take Full Width
+    3 - We Can Apply Height and Width 
+    Example :- div , p , tables etc
+
+    Display:Inline :-
+    1 - Don't Start From New Line 
+    2 - Don't Take Full Width take With Only Neccessary
+    3 - We Can't Apply Height and Width 
+    Example :- span , img , a etc 
+
+    Display:Inline-Block
+    1 - Don't Start From New Line
+    2 - Take Neccessary Width not Full Line
+    3 - We Can Apply Height and Width 
+     -->
+
+    <!-- 
+     Major Difference Between Visibility hidden and Display none 
+     If we use Visibility:hidden then Element Don't Show but space consume 
+     If we use display:none then Element don't show and space don't consume
+    -->
+
+</body>
+</html>
