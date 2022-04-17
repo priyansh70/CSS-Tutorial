@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        #div1
+        {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            border: 2px solid rebeccapurple;
+            margin: 100px;
+            cursor: pointer;
+            
+            /* if we want to set transition more than 1 more then we simply give thier name or all  */
+
+            /* transition-property: width;
+            transition-duration: 1s; */
+
+            /* give name  */
+            transition-property: width,background-color;
+            transition-duration: 1s;
+
+            /* give all  */
+            transition-property: all;
+            transition-duration: 1s;
+
+            /* transition delay ka simple mtlb hai ki jese hi ham hover krenge uske kitne second ke bad transition start hogi*/
+            transition-delay: 500ms;
+
+            /* transition timing function ka use ham jab krte hai jab hm transition me chahte hai ki start slow ho ya fast ho etc */
+
+            transition-timing-function: ease-out;
+            
+            /* shortcut for all transition property  */
+            /* syntax  */
+            /* transition: property,duration,timing-funcion,delay ; */
+
+            transition: all 2s;
+
+        }
+        #div1:hover{
+            width: 400px; /*When you hover on div 1 it suddenly changes into 400px width*/
+            background-color: aliceblue;
+            height: 400px;
+            
+            /* agr ham chahte hai ki hmara transition smooth ho 1 dam se na ho */
+            /* isly ham transition property ka use krte ha */
+
+            /* hum transition property #div1 me lgaynge */
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        My Name is Priyansh Patel
+    </div>
+</body>
+</html>

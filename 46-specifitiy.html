@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+</head>
+
+<body>
+
+    <h1>Every CSS selector has its place in the specificity hierarchy.</h1>
+
+    <p>There are four categories which define the specificity level of a selector:</p>
+    <ul>
+        <li>Inline styles </li>
+        <li>IDs - Example: #navbar</li>
+        <li>Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]</li>
+        <li>Elements and pseudo-elements - Example: h1, :before</li>
+    </ul>
+
+<strong>Note: Inline style gets a specificity value of 1000, and is always given the highest priority!
+<br>
+    Note 2: There is one exception to this rule: if you use the !important rule, it will even override inline styles!</strong>
+</body>
+
+</html>

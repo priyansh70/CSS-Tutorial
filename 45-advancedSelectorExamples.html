@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selector Example</title>
+
+    <style>
+        /* <!-- Element  Selector  --> */
+        p{
+            color: red;
+        }
+
+        /* #ID Selector  */
+        #list2{
+            color: chocolate;
+        }
+
+        /* .class Selector  */
+        .list-Item{
+            color: green;
+        }
+
+        /*pseudo Class*/
+        a:hover{
+            background-color: red;
+        }
+
+        /*pseudo Element*/
+        p::first-letter{
+            font-size: 20px;
+            color: rebeccapurple;
+        }
+
+        /*Attribute Selector*/
+        a[href="https://www.google.com"]{
+                    color:green;
+        }
+
+        /* or Example  */
+        /* input[type="password"]{
+            background-color: red;
+            color: white;
+        } */
+        
+        /*Universal Selector*/
+        *{
+            border: 1px solid blue;
+        }
+
+        /*Combinator Selector - */
+        /* Descendant Combinator(child at any stage)  */
+
+        div a{
+            border: 2px solid black;
+        }
+
+        /* Child Combinatory(Direct Child)  */
+        div > a{
+            background-color: yellowgreen; /*It is not work because a is  not direct child of div*/
+        }
+
+        /* Child Combinatory (Right After Sibling) */
+        h1+p{
+            background-color: orange;
+        }
+
+        /* General Sibling Combinator(All siblings) */
+        h1~ul{
+            background-color: yellow;
+        }
+
+        /* Add Selector  */
+        p,h1,ul{
+            font-family: cursive;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea impedit provident aliquam et, architecto
+            suscipit, veritatis quia eum, rerum maiores corporis sed tempora! Vel maxime soluta iste excepturi
+            perferendis doloremque ullam natus temporibus. Cumque iste iure maxime facilis officiis facere explicabo
+            consequuntur animi cupiditate sed ut eaque nam culpa doloribus impedit provident, error autem magnam
+            expedita eos. Dignissimos, facere et inventore quia impedit sequi, alias natus nemo dolores id quo officiis,
+            hic minus explicabo laboriosam a dolor necessitatibus delectus! Impedit repellendus praesentium similique
+            ea. Eos neque eveniet accusantium similique esse reprehenderit facere error quis nobis? Qui officiis nemo
+            tempore veritatis, cumque delectus dolores molestias provident quam, in velit. Temporibus pariatur ex
+            officiis dolorum quasi adipisci esse quos iste aliquam beatae nam inventore tenetur, neque perspiciatis aut
+            asperiores recusandae sint odit soluta a in mollitia dolorem. Nulla in ducimus quaerat labore enim! Totam
+            asperiores repellendus nobis officia laborum fugit labore facilis vel nulla deleniti alias tempore impedit
+            enim ullam, debitis atque nisi modi reiciendis porro iusto! Voluptatibus amet, porro eius sequi adipisci ab
+            sapiente quaerat alias qui debitis nisi doloremque enim, dolorum consequatur! Quaerat similique placeat aut
+            natus itaque a quibusdam corrupti dolores id eveniet! Ad quas velit fugit blanditiis nemo sequi earum
+            inventore nisi culpa animi amet consequatur similique sint vitae iure, est voluptatem quo, eum sed aliquid
+            doloribus molestias repudiandae? Modi id quos qui soluta nesciunt, eum quis architecto. Vero a odit
+            mollitia, earum, natus fugit officiis placeat impedit praesentium dignissimos laborum sed, deleniti
+            corporis! Harum, porro. Nesciunt minima recusandae incidunt debitis? Doloribus, ipsam natus quis molestias
+            maxime ex labore ratione accusantium sed, temporibus doloremque officia repudiandae recusandae similique
+            quos, commodi velit molestiae fuga aspernatur culpa eligendi? Ut, repellendus voluptates temporibus
+            recusandae voluptatem vero ullam suscipit? Exercitationem libero sequi placeat ea commodi illum maiores
+            consectetur velit obcaecati iste ipsa cumque reiciendis eveniet animi corporis aspernatur magni soluta
+            accusamus minus, autem qui! Nisi porro beatae ex fuga molestiae tempora fugit natus unde ea, quo doloribus
+            blanditiis itaque nostrum voluptates illo doloremque aperiam eum, quas, vitae ad libero dicta tempore non
+            tenetur. Enim non eos nulla odio deserunt aut iusto nam molestiae ea facilis dolorem commodi quod illo,
+            dignissimos vitae molestias eaque officia quos architecto? Doloribus commodi, a possimus placeat iure ipsum
+            totam animi inventore quisquam labore nostrum modi dolore tempora distinctio ea illum quae cupiditate nemo
+            odio. Esse facilis eum itaque ex, recusandae suscipit dolore magni odio eveniet! Perspiciatis animi quo in,
+            quasi obcaecati necessitatibus, tempore, ullam doloribus beatae iure ea provident culpa at maxime asperiores
+            excepturi consequuntur! Totam quis maiores ipsum non iure optio pariatur repudiandae fugit, eaque illum
+            alias sunt architecto rem voluptates consequatur similique excepturi iste libero labore odio incidunt
+            doloribus! Consequatur esse eaque sunt consequuntur aliquam vero voluptates atque distinctio, iusto
+            temporibus, dolor mollitia sed, voluptate consectetur autem dignissimos aperiam a. Tempore, quod ratione.
+            Repellendus impedit quasi iusto consequatur totam. Quod, laborum praesentium! Officia odio magni
+            voluptatibus! Quos tempore facere in atque nostrum assumenda consectetur quia error eveniet quo. Sint,
+            possimus veniam error nostrum nesciunt quod!</p>
+            <ul>
+                <li>List 1</li>
+                <li id="list2">List 2</li>
+                <li>List 3</li>
+                <li>List 4</li>
+                <li class="list-Item">List 5 <a href="https://www.google.com">Google</a></li>
+                <li class="list-Item">List 6</li>
+                <li>List 7 <a href="https://www.youtube.com">Youtube</a> </li>
+                <li>List 8</li>
+            </ul>
+    </div>
+</body>
+
+</html>

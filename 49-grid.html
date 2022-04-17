@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+
+        .grid-container{
+            background-color: red;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 90px 50% auto; /*first column 90px second column 50% and remaining 3rd column*/
+            grid-template-rows: 100px 250px auto; /*first row 100px second row 250px and remaining 3rd row*/
+            grid-column-gap: 10px; /*gap between column*/
+            grid-row-gap: 10px; /*gap between row*/
+
+            
+            justify-content: start;
+            justify-content: end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+
+            height: 700px;
+            align-content: center;
+        }   
+
+        .grid-item{
+            background-color: yellow;
+            font-family: fantasy;
+            padding: 15px;
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        #grid1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+
+            /* shortcut  */
+
+
+            /* grid-column: 1 / 3; */
+            grid-column: 1 / span 2; /*Same as upper line*/
+        }
+
+        #grid2{
+            grid-row: 2 / 4;
+        }
+
+        #grid7{
+            grid-column: 1 / 3;
+        }
+
+        #grid4{
+            grid-area: 1/3/span 2/span 3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid in CSS</h1>
+    <div>
+        <h1>Both Flexbox and css grid has its own importants and should be used for designing a web page</h1>
+        <h2>Grid works for 2 dimensional alignment</h2>
+        <h3>Flexbox is good for space distribution</h3>
+    </div>
+
+    <h1>some important definition </h1>
+    <ol>
+        <li><strong>Grid Column :- </strong>The vertical lines of gird items are called columns</li>
+        <li><strong>Grid Row :- </strong>The horizontal lines of gird items are called rows</li>
+        <li><strong>Grid Gap :- </strong>The Space Between each row and column is called Gap</li>
+        <li><strong>Column Lines :- </strong>The lines between columns are called column lines</li>
+        <li><strong>Row Lines :- </strong>The lines between rows are called Row lines</li>
+    </ol>
+
+    <div class="grid-container">
+        <div class="grid-item" id="grid1">Grid 1</div>
+        <div class="grid-item" id="grid2">Grid 2</div>
+        <div class="grid-item" id="grid3">Grid 3</div>
+        <div class="grid-item" id="grid4">Grid 4</div>
+        <div class="grid-item" id="grid5">Grid 5</div>
+        <div class="grid-item" id="grid6">Grid 6</div>
+        <div class="grid-item" id="grid7">Grid 7</div>
+        <div class="grid-item" id="grid8">Grid 8</div>
+        <div class="grid-item" id="grid9">Grid 9</div>
+    </div>
+</body>
+</html>

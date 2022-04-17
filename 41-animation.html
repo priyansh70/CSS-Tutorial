@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* animation ke liye ham key frames bnayege jisme decide kya hoga or kab hoga */
+        
+        @keyframes changecolor{
+            /* from{
+                background-color: aliceblue;
+            }
+            
+            to{
+                background-color: aqua;
+            } */
+
+            20%
+            {
+                background-color: aqua;
+            }
+            40%{
+                background-color: black;
+                width: 300px;
+            }
+            60%{
+                background-color:blue;
+                width: 350px;
+            }
+            80%{
+                background-color: aliceblue;
+                width: 400px;
+            }
+            100%{
+                background-color: red;
+                width: 250px;
+            }
+
+        }
+        
+        #animate{
+            background-color: yellow;
+            height: 250px;
+            width: 250px;
+            animation: changecolor;
+            /*animation-delay: 1s; *//*animation itne second bad start hoga*/
+            animation-duration: 5s;
+            animation-iteration-count: 2; /*animation 2 br hoga*/
+            animation-iteration-count: infinite; /*animation runs infinite time*/
+
+        }
+        #animate2{
+            background-color: yellow;
+            height: 250px;
+            width: 250px;
+            animation: changecolor;
+            /*animation-delay: 1s; *//*animation itne second bad start hoga*/
+            animation-duration: 5s;
+            animation-iteration-count: 2; /*animation 2 br hoga*/
+            animation-iteration-count: infinite; /*animation runs infinite time*/
+            /*animation-direction: reverse;*/ /*animation ki direction kya hogi hmare keyframes ke according yah decide hoga*/
+
+            animation-timing-function: ease-out;
+        }
+        @keyframes changeColorRad
+        {
+            10% 
+            {
+                background-color: red;
+                border-radius: 10%;
+            }
+            20% 
+            {
+                background-color: yellow;
+                border-radius: 20px;
+            }
+            30% 
+            {
+                background-color: pink;
+                border-radius: 30px;
+            }
+            40% 
+            {
+                background-color: orange;
+                border-radius: 20%;
+            }
+            50% 
+            {
+                background-color: brown;
+                border-radius: 30%;
+            }
+            60% 
+            {
+                background-color: purple;
+                border-radius: 35px;
+            }
+            70% 
+            {
+                background-color: orangered;
+                border-radius: 50%;
+            }
+            80% 
+            {
+                background-color: khaki;
+                border-radius: 40px;
+            }
+            90% 
+            {
+                background-color: fuchsia;
+                border-radius: 90px;
+            }
+            100% 
+            {
+                background-color: saddlebrown;
+                border-radius: 50%;
+            }
+        }                
+        #animate3{
+            background-color: yellow;
+            height: 350px;
+            width:350px;
+            animation: changeColorRad;
+            /*animation-delay: 1s; *//*animation itne second bad start hoga*/
+            animation-duration: 5s;
+            animation-iteration-count: 2; /*animation 2 br hoga*/
+            animation-iteration-count: infinite; /*animation runs infinite time*/
+        }
+
+        </style>
+
+</head>
+<body>
+    <h1>It is CSS3 Functionality</h1>
+    <div id="animate"></div> <hr>
+    <div id="animate2"></div> <hr>
+    <div id="animate3"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Transform</title>
+
+    <style>
+        /* Basic Syntax for 3d Transform  */
+        /* Transform : perspective(ValueInPixel(ex - 300px)) Property3d() */
+        
+        #cover
+        {
+            border: 3px solid red;
+            height: 200px;
+            width: 200px;
+            margin: 150px;
+        }
+        #content
+        {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 20px;
+            /* 3d transform  */
+
+            transform: perspective(300px) rotate3d(10,0,0,20deg); 
+            transform: perspective(300px) rotate3d(0,10,0,20deg); 
+            transform: perspective(300px) rotate3d(0,0,10,20deg);
+
+            transform: perspective(300px) translate3d(50px,0px,0px);
+            transform: perspective(300px) translate3d(0px,50px,0px);
+            transform: perspective(300px) translate3d(0px,0px,50px);
+
+        }
+    </style>
+
+</head>
+<body>
+    <div id="cover">
+        <div id="content">
+            My Name is Priyansh Patel
+        </div>
+    </div>
+</body>
+</html>

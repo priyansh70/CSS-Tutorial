@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d Transform</title>
+
+    <style>
+        div {
+            /* background-color: firebrick; */
+            margin: 20px;
+            padding: 20px;
+        }
+
+        p {
+            background-color: yellow;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+        }
+
+        p:hover {
+            /*I use all transform property in hover because it is easy to understand when you hover on element and just see the result of property*/
+
+            background-color: red;
+
+            /*translate ka mtlb hai ki hm kisi element ko uski normal position se kitna hilana(translate) chahte hai*/
+            transform: translate(100px, 50px);
+           
+
+            /*It is only for X-Axis*/
+            transform: translateX(100px);
+
+            /*It is only for Y-Axis*/
+            transform: translateY(100px);
+
+            /*Rotate Property ka use hm element ko rotate krne ke liye krte hai*/
+            
+            /*20degree rotate of its normalPosition*/
+            transform: rotate(20deg);/* We can also rotate in minus  */
+            
+            /*-20degree rotate of its normalPosition*/
+            transform: rotate(-20deg);
+            
+            /* Scale is used for increase or decrease element size */
+            /* Scale contains also 2 parameter first for width and second for height*/
+            
+            transform: scale(2,2); /*currentWidth * firstParameter(2) & currentHeight * secondParameter(2)*/
+
+            transform: scaleX(.5); /*X-Axis*/
+            transform: scaleY(.5); /*Y-Axis*/
+
+
+            /* Skew Element in degree  */
+
+            transform: skew(10deg,20deg);
+            transform: skewX(-10deg);
+            transform: skewY(10deg);
+
+            /*Normally transform property center se hoti ha agr hm chahe to uska origin change kr skte hai example below*/
+
+            transform: rotate(20deg);
+            transform-origin: 0;
+            transform-origin: 50% 20%;
+
+            /* matrix ki help se hm sari property de skte hai */
+            transform: matrix(); /*check google for reference for sequence of property*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p>My Name is Priyansh</p>
+    </div>
+</body>
+
+</html>

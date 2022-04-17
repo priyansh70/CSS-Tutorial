@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+            .grid-container{
+            background-color: red;
+            padding: 20px;
+            display: grid;
+            grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer '
+            ;
+        } 
+        .grid-item{
+            background-color: yellow;
+            font-family: cursive;
+            padding: 15px;
+            font-size: 25px;
+            text-align: center;
+            border: 2px solid black;
+        }
+
+        #grid1{
+            grid-area: header;
+        }
+        
+        #grid2{
+            grid-area: menu;
+        }
+
+        #grid3{
+            grid-area: main;
+        }
+
+        #grid4{
+            grid-area: right;
+        }
+
+        #grid5{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="grid1">Header</div>
+        <div class="grid-item" id="grid2">Menu</div>
+        <div class="grid-item" id="grid3">Main</div>
+        <div class="grid-item" id="grid4">Right</div>
+        <div class="grid-item" id="grid5">Footer</div>
+    </div>
+</body>
+</html>

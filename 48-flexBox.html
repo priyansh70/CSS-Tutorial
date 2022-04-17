@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    
+    <style>
+        .flex-parent{
+            /*Uncomment div4 to 8 to see efective this property*/
+            background-color: indianred;
+            display: flex; /*flex hmesha parent ko bnayge jisse parent apne child element ko flex bna ske*/
+            flex-direction: row-reverse; /*float decide krenge*/
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-wrap: nowrap; /*automatic adjust width of element*/
+            flex-wrap: wrap; /*agr hm chahte hai ki element width ko adjust na krke apne liye alg se jagah bna le to hm wrap ka use krerge*/
+            flex-wrap: wrap-reverse;
+            
+            /* short cut for flex direction  and flex wrap  */
+            flex-flow: row wrap;
+            
+            /* Now Comment 4 to 8 div for see efective effect of this property  */
+            
+            justify-content: flex-start; /*it is default*/
+            justify-content: flex-end; /*start from end*/
+            justify-content: center; /*start from  center*/
+            justify-content: space-around; /*equal spaces have each side of div*/
+            justify-content: space-between; /*all element between spaces are equal*/
+
+
+
+            height: 300px; /*height dene se sare element stretch ho  gaye*/
+            align-items: stretch; /*it is default*/
+
+            /*lekin ham nahi chahte hai ki element stretch ho unhe jitni jrurt ho utni hi space le to hm yeh propertry use krenge*/
+
+            align-items: flex-start;  /*It is for start*/
+            align-items: flex-end; /*it is for end*/
+            align-items: center; /*It is for center*/
+
+            /* Justify-content use for horizontal  */
+            /* we use align-content for vertical  */
+
+            /* now uncomment 4 t 8 div and comment justify-content property  */
+            /* align-content: flex-start; 
+            align-content: flex-end; 
+            align-content: space-around; 
+            align-content: space-between; 
+            align-content: center;  */
+
+            /* Now i comment align-content and uncomment justify-content */
+
+            /* kisi bhi item ko pure div me center krne ke liye -  */
+            justify-content: center;
+            align-items: center;
+
+            }
+        .flex-child{
+            background-color: yellow;
+            margin: 20px;
+            padding:20px;
+            /* display: inline-block;  */
+            width: 100px;
+            text-align: center;
+        }  
+
+        /* we can change order of child element by order */
+        #one{
+            /* order: 3; */
+            /*flex-grow: 1;*/ /*kitna grow hoga element*/
+
+            flex-basis: 500px; /*it is a initial width*/
+            align-self: flex-start; 
+        }
+
+        #two{
+            /* order: 1; */
+            flex-grow: 3; /*normal container se x guna bade rhega*/
+            align-self: center;
+        }
+        
+        #three{
+            flex-shrink: 2; /*normal container se x guna chota rhega*/
+            align-self: flex-end;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Flexbox is very important for interview and as well as important for design resposive and flexible site without using float and position
+        </h1>
+
+    <div class="flex-parent">
+        <div class="flex-child" id="one">One</div>
+        <div class="flex-child" id="two">Two</div>
+        <div class="flex-child" id="three">Three</div>
+        <!-- <div class="flex-child">Four</div> -->
+        <!-- <div class="flex-child">Five</div>
+        <div class="flex-child">Six</div>
+        <div class="flex-child">Seven</div>
+        <div class="flex-child">Eight</div> -->
+    </div>
+</body>
+</html>

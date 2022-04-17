@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selector</title>
+</head>
+<body>
+    All Selector in CSS 
+    <ul>
+        <li>Element Selector
+            <pre>
+                p{
+                    color:red;
+                }
+            </pre>
+        </li>
+        <li>ID Selector
+            <pre>
+                #blackBG{
+                    background-color:black;
+                }
+            </pre>
+        </li>
+        <li>Class Selector
+            <pre>
+                 .blackBG{
+                    background-color:black;
+                 }
+           </pre>
+        </li>
+        <li>Pseudo Class and Pseudo Element
+            <pre>
+                a:hover{
+                    color:red;
+                }
+                a:first-line{
+                    color:yellow;
+                }
+            </pre>
+        </li>
+        <li>Attribute Selector
+            <pre>
+                a[href="https://google.com"]{
+                    color:red;
+                }
+            </pre>
+        </li>
+        <li>Universal Selector
+            <pre>
+                *{
+                    border: 2px solid red;
+                }
+            </pre>
+        </li>
+        <li>Combinator Selector
+            <ol>
+                <li>Descendant Combinator(child at any stage)
+                    <pre>
+                        .red-p span{ /*.red-p class inside span */
+                            color:red;
+                        }
+                    </pre>
+                </li>
+                <li>Child Combinatory(Direct Child)
+                    <pre>
+                        .rep-p > span{
+                            color : yellow;
+                        }
+                    </pre>
+                </li>
+                <li>Adjacent Combinator(Right After Sibling)
+                    <pre>
+                        .red-p +h1{
+                            color:blue;
+                        }
+                    </pre>
+                </li>
+                <li>General Sibling Combinator(All siblings)
+                    <pre>
+                        .red-p ~ h1{
+                            color:yellow;
+                        }
+                    </pre> 
+                </li>
+            </ol>
+        </li>
+        <li>Add Selector
+            <pre>
+                h1,p,.box{
+                    background-color:red;
+                }
+            </pre>
+        </li>
+    </ul>
+    <h1>Implement all in next File 
+        <br>
+        File Number -> 45
+    </h1>
+</body>
+</html>

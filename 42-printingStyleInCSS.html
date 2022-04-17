@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Style in CSS</title>
+
+    <style>
+        #print{
+            background-color: antiquewhite;
+            font-size: 20px;
+        }
+
+        /*When you click on print then  in printing page all this property apply */
+
+        @media print{
+            img{
+                display: none;
+            }
+            p{
+                font-size: 30px;
+                color: red;
+            }
+        }
+
+        /* @media screen {
+            #print{
+                background-color: yellowgreen;
+            }
+        } */
+
+    </style>
+    </head>
+
+<body>
+    <h1>Printing Style in CSS</h1>
+
+    <div id="print">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste quaerat, aspernatur, distinctio inventore
+            temporibus fuga officiis laudantium quos aperiam fugit sequi minus consequuntur tenetur alias. Eligendi
+            aliquam odit, assumenda consequuntur veritatis maxime nulla delectus vitae commodi! Quis, laboriosam dolores
+            a pariatur, molestias aspernatur quae quibusdam consequuntur illum dicta dolore ab.</p>
+            <img src="images/image2.jfif" alt="">
+    </div>
+</body>
+
+</html>
